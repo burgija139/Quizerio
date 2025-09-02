@@ -1,0 +1,6 @@
+@Quizerio_HostAddress = http://localhost:5039
+
+GET {{Quizerio_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
