@@ -47,12 +47,50 @@ namespace Quizerio.Services
 
         public async Task<QuizDto?> UpdateAsync(int id, QuizDto quizDto)
         {
-            var quiz = await _context.Quizzes.FindAsync(id);
+            var quiz = await _context.Quizzes
+                .Include(q => q.Questions)
+                .FirstOrDefaultAsync(q => q.Id == id);
             if (quiz == null) return null;
 
-            _mapper.Map(quizDto, quiz);
+            quiz.Title = quizDto.Title;
+            quiz.Category = quizDto.Category;
+            quiz.Difficulty = quizDto.Difficulty;
+            quiz.TimeLimit = quizDto.TimeLimit;
+            quiz.Questions.Clear();
+
+            foreach (var qDto in quizDto.Questions)
+            {
+                quiz.Questions.Add(new Question
+                {
+                    Text = qDto.Text,
+                    Type = (QuestionType)qDto.Type, // ovde castuješ
+                    Options = qDto.Options,
+                    CorrectOptionIndexes = qDto.CorrectOptionIndexes,
+                    CorrectAnswerText = qDto.CorrectAnswerText,
+                    Points = qDto.Points
+                });
+            }
+
             await _context.SaveChangesAsync();
-            return _mapper.Map<QuizDto>(quiz);
+            return new QuizDto
+            {
+                Id = quiz.Id,
+                Title = quiz.Title,
+                Category = quiz.Category,
+                Difficulty = quiz.Difficulty,
+                TimeLimit = quiz.TimeLimit,
+                QuestionsCount = quiz.Questions.Count,
+                Questions = quiz.Questions.Select(q => new QuestionDto
+                {
+                    Id = q.Id,
+                    Text = q.Text,
+                    Type = q.Type, // cast za frontend
+                    Options = q.Options,
+                    CorrectOptionIndexes = q.CorrectOptionIndexes,
+                    CorrectAnswerText = q.CorrectAnswerText,
+                    Points = q.Points
+                }).ToList()
+            };
         }
 
         public async Task<bool> DeleteAsync(int id)

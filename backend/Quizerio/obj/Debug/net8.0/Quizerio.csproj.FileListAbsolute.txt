@@ -347,4 +347,7 @@ C:\Users\BURGIJA\Desktop\quizerio\backend\Quizerio\obj\Debug\net8.0\refint\Quize
 C:\Users\BURGIJA\Desktop\quizerio\backend\Quizerio\obj\Debug\net8.0\Quizerio.pdb
 C:\Users\BURGIJA\Desktop\quizerio\backend\Quizerio\obj\Debug\net8.0\Quizerio.genruntimeconfig.cache
 C:\Users\BURGIJA\Desktop\quizerio\backend\Quizerio\obj\Debug\net8.0\ref\Quizerio.dll
+C:\Users\BURGIJA\Desktop\quizerio\backend\Quizerio\obj\Debug\net8.0\Quizerio.sourcelink.json
+C:\Users\BURGIJA\Desktop\quizerio\backend\Quizerio\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\BURGIJA\Desktop\quizerio\backend\Quizerio\bin\Debug\net8.0\Quizerio.staticwebassets.runtime.json
 C:\Users\BURGIJA\Desktop\quizerio\backend\Quizerio\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

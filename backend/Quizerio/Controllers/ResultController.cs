@@ -63,5 +63,28 @@ namespace Quizerio.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+        [HttpGet("user/{userId}")]
+        public async Task<IActionResult> GetUserResults(int userId)
+        {
+            var results = await _resultService.GetUserResultsAsync(userId);
+            return Ok(results);
+        }
+
+        [HttpGet("progress")]
+        public async Task<IActionResult> GetUserResults([FromQuery] int userId, [FromQuery] int quizId)
+        {
+            // Poziva servis koji filtrira po userId i po opcionalnom quizId
+            var results = await _resultService.GetUserResultsProgressAsync(userId, quizId);
+            return Ok(results);
+        }
+
+        [HttpGet("leaderboard")]
+        public async Task<IActionResult> GetLeaderboard([FromQuery] int quizId, [FromQuery] string period = "all")
+        {
+            var results = await _resultService.GetLeaderboardAsync(quizId, period);
+            return Ok(results);
+        }
+
     }
 }

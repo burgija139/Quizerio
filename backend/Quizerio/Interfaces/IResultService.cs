@@ -12,5 +12,8 @@ namespace Quizerio.Interfaces
         Task<ResultDto?> UpdateAsync(int id, ResultDto resultDto);
         Task<bool> DeleteAsync(int id);
         Task<ResultDto> SubmitAsync(SubmitResultDto dto);
+        Task<List<ResultDto>> GetUserResultsAsync(int userId);
+        Task<List<ResultDto>> GetUserResultsProgressAsync(int userId, int quizId);
+        Task<List<LeaderboardDto>> GetLeaderboardAsync(int quizId, string period);
     }
 }

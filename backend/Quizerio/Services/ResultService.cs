@@ -49,6 +49,35 @@ namespace Quizerio.Services
             return true;
         }
 
+        public async Task<List<ResultDto>> GetUserResultsAsync(int userId)
+        {
+            var results = await _context.Results
+                .Include(r => r.Answers) // ako ima Answers relacija
+                .Where(r => r.UserId == userId)
+                .OrderByDescending(r => r.TakenAt)
+                .ToListAsync();
+
+            
+            return _mapper.Map<List<ResultDto>>(results);
+
+            /* ako hoćeš ručno da mapiraš:
+            return results.Select(r => new ResultDto
+            {
+                Id = r.Id,
+                UserId = r.UserId,
+                QuizId = r.QuizId,
+                Score = r.Score,
+                TakenAt = r.TakenAt,
+                Answers = r.Answers.Select(a => new UserAnswerDto
+                {
+                    QuestionId = a.QuestionId,
+                    UserAnswerText = a.UserAnswerText,
+                    CorrectAnswerText = a.CorrectAnswerText,
+                    IsCorrect = a.IsCorrect
+                }).ToList()
+            }).ToList();*/
+        }
+
         public async Task<ResultDto> SubmitAsync(SubmitResultDto dto)
         {
             var quiz = await _context.Quizzes
@@ -72,9 +101,10 @@ namespace Quizerio.Services
                 {
                     case QuestionType.SingleChoice:
                     case QuestionType.TrueFalse:
-                        isCorrect = userAnswerDto.SelectedOptionIndexes.FirstOrDefault() == q.CorrectOptionIndexes.FirstOrDefault();
+                        isCorrect = userAnswerDto.SelectedOptionIndexes != null &&
+                                    userAnswerDto.SelectedOptionIndexes.Count > 0 &&
+                                    userAnswerDto.SelectedOptionIndexes.First() == q.CorrectOptionIndexes.First();
                         break;
-
                     case QuestionType.MultipleChoice:
                         var correctSet = q.CorrectOptionIndexes.OrderBy(i => i);
                         var selectedSet = userAnswerDto.SelectedOptionIndexes.OrderBy(i => i);
@@ -97,11 +127,11 @@ namespace Quizerio.Services
                 });
             }
 
-            int timeBonus = Math.Max(1, Math.Min(10, (int)Math.Ceiling(dto.TimeLeftSeconds / 60.0)));
-            totalScore += timeBonus;
+
 
             var result = new Result
             {
+                QuizTitle = quiz.Title,
                 UserId = dto.UserId,
                 QuizId = dto.QuizId,
                 Score = totalScore,
@@ -115,6 +145,59 @@ namespace Quizerio.Services
             // Map entity to DTO
             return _mapper.Map<ResultDto>(result);
         }
+
+       public async Task<List<ResultDto>> GetUserResultsProgressAsync(int userId, int quizId) 
+        {
+            var query = _context.Results
+                                .Include(r => r.Answers)
+                                .Where(r => r.UserId == userId && r.QuizId == quizId)
+                                .OrderBy(r => r.TakenAt);
+
+            var results = await query.ToListAsync();
+
+            return _mapper.Map<List<ResultDto>>(results);
+        }
+
+        public async Task<List<LeaderboardDto>> GetLeaderboardAsync(int quizId, string period)
+        {
+            var query = _context.Results
+                .Where(r => r.QuizId == quizId);
+
+            if (period == "weekly")
+            {
+                var start = DateTime.UtcNow.AddDays(-7);
+                query = query.Where(r => r.TakenAt >= start);
+            }
+            else if (period == "monthly")
+            {
+                var start = DateTime.UtcNow.AddMonths(-1);
+                query = query.Where(r => r.TakenAt >= start);
+            }
+
+            var list = await query.ToListAsync();
+
+            var bestPerUser = list
+                .GroupBy(r => r.UserId)
+                .Select(g => g.OrderByDescending(r => r.Score)
+                              .ThenBy(r => r.TakenAt)
+                              .First())
+                .Select(r => new LeaderboardDto
+                {
+                    UserId = r.UserId,
+                    Username = _context.Users.Where(u => u.Id == r.UserId).Select(u => u.Username).FirstOrDefault() ?? "Unknown",
+                    Score = r.Score,
+                    TakenAt = r.TakenAt
+                })
+                .OrderByDescending(r => r.Score)
+                .ThenBy(r => r.TakenAt)
+                .ToList();
+
+            return bestPerUser;
+        }
+
+
+
+
 
     }
 }

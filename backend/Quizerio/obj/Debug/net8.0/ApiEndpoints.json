@@ -1,5 +1,31 @@
 [
   {
+    "ContainingType": "Quizerio.Controllers.ArenaController",
+    "Method": "GetRooms",
+    "RelativePath": "api/Arena/list",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quizerio.Controllers.ArenaController",
+    "Method": "CreateRoom",
+    "RelativePath": "api/Arena/room",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Quizerio.DTO.CompetitionRoomDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Quizerio.Controllers.AuthController",
     "Method": "Login",
     "RelativePath": "api/Auth/login",
@@ -24,9 +50,24 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "dto",
-        "Type": "Quizerio.DTO.RegisterDto",
-        "IsRequired": true
+        "Name": "Username",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Image",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -185,6 +226,48 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quizerio.Controllers.ResultController",
+    "Method": "GetLeaderboard",
+    "RelativePath": "api/Result/leaderboard",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "quizId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "period",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quizerio.Controllers.ResultController",
+    "Method": "GetUserResults",
+    "RelativePath": "api/Result/progress",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "quizId",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -200,6 +283,22 @@
       {
         "Name": "dto",
         "Type": "Quizerio.DTO.SubmitResultDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quizerio.Controllers.ResultController",
+    "Method": "GetUserResults",
+    "RelativePath": "api/Result/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

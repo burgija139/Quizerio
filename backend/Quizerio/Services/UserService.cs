@@ -47,15 +47,23 @@ namespace Quizerio.Services
             return _mapper.Map<UserDto>(user);
         }
 
-        public async Task<UserDto?> UpdateAsync(int id, UserDto userDto)
+        public async Task<UserDto> UpdateAsync(int id, UserDto userDto)
         {
             var user = await _context.Users.FindAsync(id);
-            if (user == null) return null;
+            if (user == null)
+            {
+                throw new KeyNotFoundException("User not found");
+            }
 
-            _mapper.Map(userDto, user);
+            user.Username = userDto.Username;
+            user.Email = userDto.Email;
+            user.Role = userDto.Role;
+
             await _context.SaveChangesAsync();
+
             return _mapper.Map<UserDto>(user);
         }
+
 
         public async Task<bool> DeleteAsync(int id)
         {
@@ -69,33 +77,56 @@ namespace Quizerio.Services
 
         public async Task<UserDto> RegisterAsync(RegisterDto dto)
         {
-            // Basic validation
             if (dto.Password.Length < 6)
                 throw new Exception("Password must be at least 6 characters long.");
             if (!dto.Email.Contains("@"))
                 throw new Exception("Invalid email address.");
 
-            // Check for existing username or email
             var existingUser = await _context.Users
                 .FirstOrDefaultAsync(u => u.Username == dto.Username || u.Email == dto.Email);
 
             if (existingUser != null)
                 throw new Exception("Username or email already exists.");
 
-            // Map DTO to User entity
             var user = _mapper.Map<User>(dto);
 
-            // Set password hash and default role
+            // Hash password
             user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password);
-            user.Role = "User"; // default role
+            user.Role = "User";
 
-            // Save to database
+            // Save image (lokalno, kasnije možeš Azure Blob ili S3)
+            if (dto.Image != null)
+            {
+                // Putanja do wwwroot/uploads
+                var uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
+
+                // Ako folder ne postoji – napravi ga
+                if (!Directory.Exists(uploadPath))
+                {
+                    Directory.CreateDirectory(uploadPath);
+                }
+
+                // Generiši ime fajla
+                var fileName = $"{Guid.NewGuid()}_{dto.Image.FileName}";
+                var filePath = Path.Combine(uploadPath, fileName);
+
+                // Snimi fajl
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await dto.Image.CopyToAsync(stream);
+                }
+
+                // Sačuvaj URL u bazi (relativna putanja)
+                user.ImageUrl = $"/uploads/{fileName}";
+            }
+
+
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
 
-            // Map saved entity to UserDto and return
             return _mapper.Map<UserDto>(user);
         }
+
 
 
         public async Task<AuthResponseDto> LoginAsync(LoginDto dto)

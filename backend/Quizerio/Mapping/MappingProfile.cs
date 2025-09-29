@@ -8,11 +8,15 @@ namespace Quizerio.Mappings
     {
         public MappingProfile()
         {
-            CreateMap<Result, ResultDto>().ReverseMap();
+            CreateMap<Result, ResultDto>()
+           .ForMember(dest => dest.Answers, opt => opt.MapFrom(src => src.Answers));
+
             CreateMap<User, UserDto>().ReverseMap();
             CreateMap<Quiz, QuizDto>().ReverseMap();
             CreateMap<Question, QuestionDto>().ReverseMap();
-            CreateMap<RegisterDto, User>();
+            CreateMap<RegisterDto, User>()
+    .ForMember(dest => dest.ImageUrl, opt => opt.Ignore());
+            CreateMap<UserAnswer, UserAnswerDto>();
         }
     }
 }

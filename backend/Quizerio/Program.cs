@@ -1,8 +1,12 @@
-using Quizerio.Infrastructure;
+﻿using Quizerio.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Quizerio.Mappings;
 using Quizerio.Interfaces;
 using Quizerio.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using Quizerio.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +15,7 @@ var connectionString = "Server=DESKTOP-GB38794\\SQLEXPRESS;Database=QuizAppDB;Tr
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(connectionString));
 
-//Add controlers
+// Add controllers
 builder.Services.AddControllers();
 
 // Dodavanje CORS-a
@@ -21,25 +25,50 @@ builder.Services.AddCors(options =>
     {
         policy.WithOrigins("http://localhost:3000")
               .AllowAnyHeader()
-              .AllowAnyMethod();
+              .AllowAnyMethod()
+              .AllowCredentials(); // ✅ potrebno za SignalR
     });
 });
 
-//Add Swagger
+// Add SignalR
+builder.Services.AddSignalR();
+
+// Add Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Add Mapper.
+// Add AutoMapper
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 
+// Add custom services
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IQuizService, QuizService>();
 builder.Services.AddScoped<IResultService, ResultService>();
+builder.Services.AddScoped<IArenaService, ArenaService>();
+
+builder.Services.AddHostedService<QuizBackgroundService>();
+
+// Add JWT Authentication
+builder.Services.AddAuthentication("Bearer")
+    .AddJwtBearer("Bearer", options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = false, // uključi ako koristiš audience
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+            IssuerSigningKey = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+        };
+    });
+
+builder.Services.AddAuthorization(); // potrebno za role-based auth
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-
+// Configure HTTP request pipeline
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
@@ -48,8 +77,17 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseStaticFiles();
+
+// ✅ CORS mora da ide pre Auth middlewara
 app.UseCors("AllowReactApp");
+
 app.UseAuthentication();
 app.UseAuthorization();
+
 app.MapControllers();
+
+// Mapiranje SignalR huba
+app.MapHub<ArenaHub>("/arenaHub");
+
 app.Run();

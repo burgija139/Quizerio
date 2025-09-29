@@ -11,6 +11,7 @@ namespace Quizerio.Infrastructure
         public DbSet<Result> Results { get; set; }
         public DbSet<Question> Questions { get; set; }
         public DbSet<UserAnswer> UserAnswers { get; set; }
+        public DbSet<CompetitionRoom> CompetitionRooms { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

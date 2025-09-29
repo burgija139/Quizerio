@@ -16,7 +16,7 @@ namespace Quizerio.Controllers
         }
 
         [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody] RegisterDto dto)
+        public async Task<IActionResult> Register([FromForm] RegisterDto dto)
         {
             try
             {

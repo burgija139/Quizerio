@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\wwwroot\\uploads\\0143c414-d8ec-40b3-b9c4-1f755b0cdc58_testic1.jfif",
+      "PackagePath": "staticwebassets\\uploads\\0143c414-d8ec-40b3-b9c4-1f755b0cdc58_testic1.jfif"
+    },
+    {
+      "Id": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\wwwroot\\uploads\\04cf6bdd-852b-44e9-8a2b-f942a3a37da7_profil1.jfif",
+      "PackagePath": "staticwebassets\\uploads\\04cf6bdd-852b-44e9-8a2b-f942a3a37da7_profil1.jfif"
+    },
+    {
+      "Id": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\wwwroot\\uploads\\2f6a25fa-0c41-4d3d-82bc-a294ab9fd555_progil2.jfif",
+      "PackagePath": "staticwebassets\\uploads\\2f6a25fa-0c41-4d3d-82bc-a294ab9fd555_progil2.jfif"
+    },
+    {
+      "Id": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\wwwroot\\uploads\\33d249ee-47cb-412e-a4b3-46bab92425b6_profil3.webp",
+      "PackagePath": "staticwebassets\\uploads\\33d249ee-47cb-412e-a4b3-46bab92425b6_profil3.webp"
+    },
+    {
+      "Id": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\wwwroot\\uploads\\54871b3d-feb3-4600-89cc-57a41cd2cee4_testic1.jfif",
+      "PackagePath": "staticwebassets\\uploads\\54871b3d-feb3-4600-89cc-57a41cd2cee4_testic1.jfif"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Quizerio.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Quizerio.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Quizerio.props",
+      "PackagePath": "build\\Quizerio.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Quizerio.props",
+      "PackagePath": "buildMultiTargeting\\Quizerio.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Quizerio.props",
+      "PackagePath": "buildTransitive\\Quizerio.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

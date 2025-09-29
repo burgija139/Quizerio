@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Quizerio.DTO;
 using Quizerio.Interfaces;
 
@@ -43,6 +44,7 @@ namespace Quizerio.Controllers
             return Ok(updatedQuiz);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
