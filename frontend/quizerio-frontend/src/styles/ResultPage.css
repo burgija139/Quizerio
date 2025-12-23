@@ -1,0 +1,72 @@
+.result-page {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #1e1f2f;
+    color: #e0e0ff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.result-info {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.result-info p {
+    margin: 5px 0;
+}
+
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.result-table th,
+.result-table td {
+    padding: 10px;
+    border: 1px solid #44465a;
+    text-align: left;
+}
+
+.result-table th {
+    background: #2c2d3c;
+}
+
+.correct {
+    background-color: rgba(76, 175, 80, 0.3);
+    /* greenish transparent */
+}
+
+.incorrect {
+    background-color: rgba(244, 67, 54, 0.3);
+    /* reddish transparent */
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    /* pushes one left, one right */
+    margin-top: 20px;
+}
+
+.btn-back,
+.btn-progress {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.btn-back:hover {
+    background-color: #45a049;
+}
+
+.btn-progress:hover {
+    background-color: #45a049;
+}

@@ -1,0 +1,171 @@
+.quiz-page {
+    min-height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 24px 16px 40px;
+    background: #1e1f2f;
+    box-sizing: border-box;
+    margin-top: 100px;
+}
+
+/* "Oblačić" – glavna kartica */
+.quiz-bubble {
+    width: 65%;
+    background: #2c2d3e;
+    border-radius: 16px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+    padding: 24px 28px 80px;
+    /* extra bottom padding zbog dugmadi */
+    color: #e0e0ff;
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+/* Gornja traka: brojač + timer */
+.quiz-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.question-counter {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: #bdbde9;
+}
+
+.quiz-timer {
+    font-weight: bold;
+    font-size: 18px;
+    background: #1e1f2f;
+    border: 1px solid #44465a;
+    padding: 6px 12px;
+    border-radius: 8px;
+}
+
+/* Pitanje */
+.question-text {
+    margin: 8px 0 16px 0;
+    font-size: 26px;
+    line-height: 1.35;
+    color: #e0be33;
+}
+
+/* Odgovori */
+.answers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Grupisani redovi (radio/checkbox) */
+.option-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #1e1f2f;
+    border: 1px solid #3a3b50;
+    border-radius: 10px;
+    padding: 12px 14px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.option-row input {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.option-row:hover {
+    border-color: #6c63ff;
+}
+
+/* Fill input */
+.fill-input {
+    width: 90%;
+    /* maksimalna širina da se ne rasteže previše */
+    background: #1e1f2f;
+    border: 1px solid #44465a;
+    border-radius: 10px;
+    padding: 12px 14px;
+    color: #e0e0ff;
+    font-size: 16px;
+    outline: none;
+    display: block;
+    margin: 10px 0;
+    /* malo prostora oko inputa */
+}
+
+.fill-input:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 0 2px rgba(108, 99, 255, 0.2);
+}
+
+/* Donje kontrole */
+.quiz-bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.nav-btn {
+    border: none;
+    border-radius: 10px;
+    padding: 12px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.05s ease, background-color 0.2s ease;
+}
+
+.nav-btn.prev {
+    background: #3b3c5e;
+    color: #ffffff;
+}
+
+.nav-btn.prev:hover {
+    background: #4a4b75;
+}
+
+.nav-btn.prev:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.nav-btn.next {
+    background: #6c63ff;
+    color: #ffffff;
+}
+
+.nav-btn.next:hover {
+    background: #554dd1;
+}
+
+.nav-btn:active {
+    transform: translateY(1px);
+}
+
+/* Responsivnost */
+@media (max-width: 900px) {
+    .quiz-bubble {
+        width: 92%;
+        padding: 18px 16px 76px;
+    }
+
+    .question-text {
+        font-size: 22px;
+    }
+}

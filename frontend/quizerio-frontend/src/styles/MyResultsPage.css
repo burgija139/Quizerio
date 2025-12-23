@@ -1,0 +1,70 @@
+.my-results-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px 20px;
+    background: #121212;
+}
+
+.my-results-card {
+    width: 100%;
+    max-width: 950px;
+    background: #1e1e2f;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    color: #f0f0f0;
+}
+
+.my-results-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #4cafef;
+}
+
+.my-results-empty {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #aaa;
+}
+
+.my-results-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.my-results-table th,
+.my-results-table td {
+    padding: 14px 18px;
+    text-align: center;
+}
+
+.my-results-table th {
+    background: #2a2a40;
+    color: #4cafef;
+    font-weight: 600;
+}
+
+.my-results-table tr:nth-child(even) {
+    background: #25253a;
+}
+
+.my-results-table tr:nth-child(odd) {
+    background: #2f2f48;
+}
+
+.details-btn {
+    padding: 6px 14px;
+    background: #4cafef;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.details-btn:hover {
+    background: #369bd9;
+}

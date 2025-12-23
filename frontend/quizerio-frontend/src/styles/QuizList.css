@@ -1,0 +1,198 @@
+/* src/styles/QuizList.css */
+
+.quiz-list-container {
+    display: flex;
+
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.quiz-list-wrapper {
+    width: 75%;
+    max-height: 60vh;
+    background-color: #2c2d3e;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+
+    scrollbar-width: thin;
+    scrollbar-color: #6c63ff #2c2d3e;
+}
+
+.quiz-list-wrapper::-webkit-scrollbar {
+    width: 8px;
+}
+
+.quiz-list-wrapper::-webkit-scrollbar-track {
+    background: #2c2d3e;
+    border-radius: 8px;
+}
+
+.quiz-list-wrapper::-webkit-scrollbar-thumb {
+    background-color: #6c63ff;
+    border-radius: 8px;
+    border: 2px solid #2c2d3e;
+}
+
+.quiz-list-wrapper::-webkit-scrollbar-thumb:hover {
+    background-color: #554dd1;
+}
+
+/* Pojedinačni kviz */
+.quiz-card {
+    background-color: #202138;
+    padding: 25px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    text-align: left;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* Kategorija */
+.quiz-category {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+    border-bottom: 2px solid #6c63ff;
+    padding-bottom: 4px;
+    display: inline-block;
+}
+
+.quiz-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.quiz-details {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 15px;
+    color: #c0c0ff;
+}
+
+.quiz-difficulty {
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.difficulty-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.difficulty-easy {
+    background-color: #4caf50;
+    /* green */
+}
+
+.difficulty-medium {
+    background-color: #ffc107;
+    /* yellow */
+}
+
+.difficulty-hard {
+    background-color: #f44336;
+    /* red */
+}
+
+/* Start dugme */
+.quiz-start-btn {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    padding: 10px 18px;
+    background-color: #6c63ff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.quiz-start-btn:hover {
+    background-color: #554dd1;
+}
+
+.quiz-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.quiz-edit-btn {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.quiz-edit-btn:hover {
+    background-color: #e68900;
+}
+
+.quiz-delete-btn {
+    background-color: #e53935;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.quiz-delete-btn:hover {
+    background-color: #c62828;
+}
+
+.quiz-create-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.quiz-create-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #22c55e;
+    /* green */
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.quiz-create-btn:hover {
+    background-color: #16a34a;
+    /* darker green */
+}
