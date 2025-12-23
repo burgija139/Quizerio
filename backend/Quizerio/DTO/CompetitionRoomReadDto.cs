@@ -7,6 +7,7 @@
         public int QuizId { get; set; }
         public string QuizName { get; set; } = null!;
         public DateTime StartTime { get; set; }
+        public bool Started { get; set; }
     }
 
 }

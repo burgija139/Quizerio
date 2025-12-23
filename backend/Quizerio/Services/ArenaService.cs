@@ -49,7 +49,8 @@ namespace Quizerio.Services
                               Name = room.Name,
                               QuizId = room.QuizId,
                               QuizName = quiz.Title, // uzimamo ime kviza iz tabele Quiz
-                              StartTime = room.StartTime
+                              StartTime = room.StartTime,
+                              Started = room.Started
                           }).ToListAsync();
         }
     }

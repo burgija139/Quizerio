@@ -131,6 +131,8 @@ namespace Quizerio.Hubs
                 });
 
 
+
+
             }
             catch (Exception ex)
             {
@@ -149,10 +151,6 @@ namespace Quizerio.Hubs
                 })
                 .ToList();
 
-            var room = await _context.CompetitionRooms.FindAsync(roomId);
-            
-            _context.CompetitionRooms.Remove(room);
-            await _context.SaveChangesAsync();
 
             Console.WriteLine($"Leaderboard sent for room {roomId}");
 

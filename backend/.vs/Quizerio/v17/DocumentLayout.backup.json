@@ -7,20 +7,76 @@
       "RelativeMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|solutionrelative:quizerio\\hubs\\arenahub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|c:\\users\\burgija\\desktop\\quizerio\\backend\\quizerio\\services\\arenaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|solutionrelative:quizerio\\services\\arenaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|c:\\users\\burgija\\desktop\\quizerio\\backend\\quizerio\\services\\quizservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|solutionrelative:quizerio\\services\\quizservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|c:\\users\\burgija\\desktop\\quizerio\\backend\\quizerio\\controllers\\quizcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|solutionrelative:quizerio\\controllers\\quizcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|c:\\users\\burgija\\desktop\\quizerio\\backend\\quizerio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|solutionrelative:quizerio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|c:\\users\\burgija\\desktop\\quizerio\\backend\\quizerio\\models\\competitionroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|solutionrelative:quizerio\\models\\competitionroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|c:\\users\\burgija\\desktop\\quizerio\\backend\\quizerio\\interfaces\\iarenaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|solutionrelative:quizerio\\interfaces\\iarenaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|c:\\users\\burgija\\desktop\\quizerio\\backend\\quizerio\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|solutionrelative:quizerio\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|c:\\users\\burgija\\desktop\\quizerio\\backend\\quizerio\\controllers\\arenacontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|solutionrelative:quizerio\\controllers\\arenacontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|c:\\users\\burgija\\desktop\\quizerio\\backend\\quizerio\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|solutionrelative:quizerio\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|c:\\users\\burgija\\desktop\\quizerio\\backend\\quizerio\\quizerio.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|solutionrelative:quizerio\\quizerio.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|c:\\users\\burgija\\desktop\\quizerio\\backend\\quizerio\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|solutionrelative:quizerio\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|c:\\users\\burgija\\desktop\\quizerio\\backend\\quizerio\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|solutionrelative:quizerio\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|c:\\users\\burgija\\desktop\\quizerio\\backend\\quizerio\\quizerio.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|solutionrelative:quizerio\\quizerio.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|c:\\users\\burgija\\desktop\\quizerio\\backend\\quizerio\\services\\resultservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|solutionrelative:quizerio\\services\\resultservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|c:\\users\\burgija\\desktop\\quizerio\\backend\\quizerio\\infrastructure\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|solutionrelative:quizerio\\infrastructure\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|c:\\users\\burgija\\desktop\\quizerio\\backend\\quizerio\\services\\quizbackroundservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|solutionrelative:quizerio\\services\\quizbackroundservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|c:\\users\\burgija\\desktop\\quizerio\\backend\\quizerio\\dto\\competitionroomreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|solutionrelative:quizerio\\dto\\competitionroomreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|c:\\users\\burgija\\desktop\\quizerio\\backend\\quizerio\\dto\\competitionroomdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|solutionrelative:quizerio\\dto\\competitionroomdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|c:\\users\\burgija\\desktop\\quizerio\\backend\\quizerio\\controllers\\quizcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|solutionrelative:quizerio\\controllers\\quizcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{093F4478-2931-4038-B402-42DF91D86F1D}|Quizerio\\Quizerio.csproj|c:\\users\\burgija\\desktop\\quizerio\\backend\\quizerio\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,24 +90,190 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 17,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IArenaService.cs",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\Interfaces\\IArenaService.cs",
+              "RelativeDocumentMoniker": "Quizerio\\Interfaces\\IArenaService.cs",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\Interfaces\\IArenaService.cs",
+              "RelativeToolTip": "Quizerio\\Interfaces\\IArenaService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T18:32:24.974Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\appsettings.json",
+              "RelativeDocumentMoniker": "Quizerio\\appsettings.json",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\appsettings.json",
+              "RelativeToolTip": "Quizerio\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-20T18:30:36.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Quizerio.http",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\Quizerio.http",
+              "RelativeDocumentMoniker": "Quizerio\\Quizerio.http",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\Quizerio.http",
+              "RelativeToolTip": "Quizerio\\Quizerio.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-10-20T18:30:26.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Quizerio\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\Services\\UserService.cs",
+              "RelativeToolTip": "Quizerio\\Services\\UserService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T17:36:37.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Quizerio",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\Quizerio.csproj",
+              "RelativeDocumentMoniker": "Quizerio\\Quizerio.csproj",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\Quizerio.csproj",
+              "RelativeToolTip": "Quizerio\\Quizerio.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-19T21:05:06.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\Program.cs",
+              "RelativeDocumentMoniker": "Quizerio\\Program.cs",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\Program.cs",
+              "RelativeToolTip": "Quizerio\\Program.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAAEAAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T09:32:11.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ResultService.cs",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\Services\\ResultService.cs",
+              "RelativeDocumentMoniker": "Quizerio\\Services\\ResultService.cs",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\Services\\ResultService.cs",
+              "RelativeToolTip": "Quizerio\\Services\\ResultService.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T09:31:37.389Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Quizerio\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Quizerio\\Controllers\\UserController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T09:31:22.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\Infrastructure\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Quizerio\\Infrastructure\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\Infrastructure\\AppDbContext.cs",
+              "RelativeToolTip": "Quizerio\\Infrastructure\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T09:30:39.458Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ArenaService.cs",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\Services\\ArenaService.cs",
+              "RelativeDocumentMoniker": "Quizerio\\Services\\ArenaService.cs",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\Services\\ArenaService.cs",
+              "RelativeToolTip": "Quizerio\\Services\\ArenaService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwC0AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T06:08:19.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ArenaControler.cs",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\Controllers\\ArenaControler.cs",
+              "RelativeDocumentMoniker": "Quizerio\\Controllers\\ArenaControler.cs",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\Controllers\\ArenaControler.cs",
+              "RelativeToolTip": "Quizerio\\Controllers\\ArenaControler.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAcwBIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T06:08:04.561Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CompetitionRoom.cs",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\Models\\CompetitionRoom.cs",
+              "RelativeDocumentMoniker": "Quizerio\\Models\\CompetitionRoom.cs",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\Models\\CompetitionRoom.cs",
+              "RelativeToolTip": "Quizerio\\Models\\CompetitionRoom.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T06:06:43.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CompetitionRoomReadDto.cs",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\DTO\\CompetitionRoomReadDto.cs",
+              "RelativeDocumentMoniker": "Quizerio\\DTO\\CompetitionRoomReadDto.cs",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\DTO\\CompetitionRoomReadDto.cs",
+              "RelativeToolTip": "Quizerio\\DTO\\CompetitionRoomReadDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T06:06:22.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CompetitionRoomDto.cs",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\DTO\\CompetitionRoomDto.cs",
+              "RelativeDocumentMoniker": "Quizerio\\DTO\\CompetitionRoomDto.cs",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\DTO\\CompetitionRoomDto.cs",
+              "RelativeToolTip": "Quizerio\\DTO\\CompetitionRoomDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T06:06:19.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "QuizService.cs",
               "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\Services\\QuizService.cs",
               "RelativeDocumentMoniker": "Quizerio\\Services\\QuizService.cs",
               "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\Services\\QuizService.cs",
               "RelativeToolTip": "Quizerio\\Services\\QuizService.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAowGYAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAkwEgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T21:17:50.24Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-29T21:17:50.24Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 18,
               "Title": "QuizController.cs",
               "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\Controllers\\QuizController.cs",
               "RelativeDocumentMoniker": "Quizerio\\Controllers\\QuizController.cs",
@@ -59,21 +281,19 @@
               "RelativeToolTip": "Quizerio\\Controllers\\QuizController.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAgwDQAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T21:17:25.691Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-29T21:17:25.691Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Quizerio\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Quizerio\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T21:17:20.308Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-29T21:17:20.308Z"
             },
             {
               "$type": "Document",
@@ -83,14 +303,14 @@
               "RelativeDocumentMoniker": "Quizerio\\Hubs\\ArenaHub.cs",
               "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\Hubs\\ArenaHub.cs",
               "RelativeToolTip": "Quizerio\\Hubs\\ArenaHub.cs",
-              "ViewState": "AgIAAIwAAAAAAAAAAAAqwJoAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAmwDUAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-29T14:45:19.056Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 19,
               "Title": "Question.cs",
               "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\Models\\Question.cs",
               "RelativeDocumentMoniker": "Quizerio\\Models\\Question.cs",
@@ -98,21 +318,19 @@
               "RelativeToolTip": "Quizerio\\Models\\Question.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T13:30:39.552Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-29T13:30:39.552Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 15,
               "Title": "QuizBackroundService.cs",
               "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\Services\\QuizBackroundService.cs",
               "RelativeDocumentMoniker": "Quizerio\\Services\\QuizBackroundService.cs",
               "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\quizerio\\backend\\Quizerio\\Services\\QuizBackroundService.cs",
               "RelativeToolTip": "Quizerio\\Services\\QuizBackroundService.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAuwCwAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAYwFYAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T13:30:32.494Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-29T13:30:32.494Z"
             }
           ]
         }

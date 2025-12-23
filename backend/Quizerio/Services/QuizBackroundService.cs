@@ -44,7 +44,7 @@ namespace Quizerio.Services
                     _ = Task.Run(() => StartQuizForRoom(room.Id), stoppingToken);
                 }
 
-                await Task.Delay(TimeSpan.FromSeconds(5), stoppingToken);
+                await Task.Delay(TimeSpan.FromSeconds(1), stoppingToken);
             }
         }
 
@@ -67,7 +67,7 @@ namespace Quizerio.Services
                             x.CorrectOptionIndexes,   // lista int-ova
                             x.CorrectAnswerText,      // tekstualni odgovor (za FillInTheBlank)
                             x.Points,
-                            Duration = 10            // hardkodirano vreme po pitanju (možeš kasnije da dodaš u model)
+                            Duration = 15         // hardkodirano vreme po pitanju (možeš kasnije da dodaš u model)
                         })
                         .ToList()
                 })

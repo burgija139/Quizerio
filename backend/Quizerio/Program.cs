@@ -91,3 +91,77 @@ app.MapControllers();
 app.MapHub<ArenaHub>("/arenaHub");
 
 app.Run();
+
+// Add CORS 
+
+builder.Services.AddCors(options => 
+
+{ 
+
+    options.AddPolicy("AllowReactApp", policy => 
+
+    { 
+
+        policy.WithOrigins("http://localhost:3000") 
+
+              .AllowAnyHeader() 
+
+              .AllowAnyMethod() 
+
+              .AllowCredentials(); // Potrebno za SignalR 
+
+    }); 
+
+}); 
+
+  
+
+// Add SignalR 
+
+builder.Services.AddSignalR(); 
+
+  
+
+// Add Swagger 
+
+builder.Services.AddEndpointsApiExplorer(); 
+
+builder.Services.AddSwaggerGen(); 
+
+  
+
+// Add AutoMapper 
+
+builder.Services.AddAutoMapper(typeof(MappingProfile)); 
+
+  
+
+// Add JWT Authentication 
+
+builder.Services.AddAuthentication("Bearer") 
+
+    .AddJwtBearer("Bearer", options => 
+
+    { 
+
+        options.TokenValidationParameters = new TokenValidationParameters 
+
+        { 
+
+            ValidateIssuer = true, 
+
+            ValidateAudience = false, // Uključi ako koristiš audience 
+
+            ValidateLifetime = true, 
+
+            ValidateIssuerSigningKey = true, 
+
+            ValidIssuer = builder.Configuration["Jwt:Issuer"], 
+
+            IssuerSigningKey = new SymmetricSecurityKey( 
+
+                Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"])) 
+
+        }; 
+
+    }); 
