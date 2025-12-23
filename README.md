@@ -1,4 +1,4 @@
-![ ](images/Screenshot1)
+![ ](images/Screenshot1.png)
 ![ ](images/Screenshot2)
 ![ ](images/Screenshot3)
 ![ ](images/Screenshot4)
